@@ -27,9 +27,22 @@ export const Footer: FC = () => {
             />
           </a>
           
-          <p className="text-center text-black dark:text-gray-400 text-sm sm:text-base">
-            &copy; {COPYRIGHT_TEXT}
-          </p>
+          <div className="text-center text-black dark:text-gray-400 text-sm sm:text-base space-y-2">
+            <p>
+              &copy; {COPYRIGHT_TEXT}
+            </p>
+            <p className="text-xs sm:text-sm">
+              طراحی شده توسط{' '}
+              <a
+                href="https://github.com/prhdm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline"
+              >
+                پرهام هوشمند
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

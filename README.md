@@ -1,89 +1,217 @@
-# First Sharif's Discrete Mathmatics and Combinatorics Workshop Homepage
+# کارگاه ریاضیات گسسته و ترکیبیات
 
-This Homepage has been prepared to the first sharif's discrete mathmatics and combinatorics workshop 1404 (2025)
+وب‌سایت رسمی اولین کارگاه آموزشی ریاضیات گسسته و ترکیبیات دانشکده ریاضی دانشگاه صنعتی شریف
 
-## Features
+## درباره کارگاه
 
-- 🎨 Modern, clean design with professional color palette
-- 📱 Fully responsive layout
-- 🌓 Dark mode support
-- ⚡ Built with Next.js 14 and TypeScript
-- 💅 Styled with Tailwind CSS
-- 🎯 Single-page application with smooth scrolling
-- 🎭 Professional icons using Lucide React
-- 🔤 Beautiful Vazir font (Persian/Latin support)
-- 🔄 Full RTL (Right-to-Left) support for Persian content
-- 🕸️ Animated graph network background (discrete mathematics theme)
+این کارگاه با هدف آموزش مفاهیم پیشرفته ریاضیات گسسته و نظریه گراف توسط برجسته‌ترین اساتید این حوزه در ایران برگزار می‌شود.
 
-## Getting Started
+### اساتید کارگاه
+
+- دکتر جواد ابراهیمی بروجنی (دانشگاه صنعتی شریف)
+- دکتر سعید اکبری - دبیر علمی (دانشگاه صنعتی شریف)
+- دکتر افشین بهمرام (دانشگاه تبریز)
+- دکتر محسن جمالی (دانشگاه صنعتی شریف)
+- دکتر علی طاهرخانی (دانشگاه علوم پایه زنجان)
+- دکتر علیرضا علی‌پور
+
+### محتوای کارگاه
+
+- شمارش
+- توابع مولد
+- نظریه گراف و کاربردها
+
+### تاریخ‌های مهم
+
+- **ثبت‌نام:** ۱ آبان تا ۳۰ دی ۱۴۰۴
+- **برگزاری کارگاه:** ۱۵ تا ۱۷ بهمن ۱۴۰۴
+
+### نحوه شرکت
+
+- **حضوری:** دانشگاه صنعتی شریف
+- **مجازی:** سامانه کلاس‌های مجازی دانشگاه
+
+---
+
+# Discrete Mathematics and Combinatorics Workshop
+
+Official website for the First Discrete Mathematics and Combinatorics Workshop by the Faculty of Mathematical Sciences at Sharif University of Technology.
+
+## 🚀 Tech Stack
+
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS with RTL support
+- **Canvas API** - Animated graph background visualization
+
+## ✨ Features
+
+- 🎨 **Animated Graph Background** - Interactive mathematical graph visualization
+- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- ⌨️ **Typewriter Effect** - Dynamic animated title
+- 🌓 **Dark Mode** - Beautiful dark theme support
+- 🔄 **RTL Support** - Right-to-left layout for Persian content
+- 📅 **Interactive Timeline** - Visual workshop schedule
+- ♿ **Accessible** - WCAG compliant with proper ARIA labels
+
+## 📦 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ installed
-- npm or yarn package manager
+- Node.js 18.17 or later
+- npm, yarn, or pnpm
 
 ### Installation
 
-1. Install dependencies:
-
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd Workshop
+
+# Install dependencies
 npm install
-```
+# or
+pnpm install
+# or
+yarn install
 
-2. Run the development server:
-
-```bash
+# Run development server
 npm run dev
+# or
+pnpm dev
+# or
+yarn dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 Workshop/
 ├── app/
-│   ├── layout.tsx       # Root layout with metadata
-│   ├── page.tsx         # Main homepage component
-│   └── globals.css      # Global styles
-├── package.json         # Dependencies
-├── tailwind.config.js   # Tailwind configuration
-├── tsconfig.json        # TypeScript configuration
-└── next.config.js       # Next.js configuration
+│   ├── components/
+│   │   ├── ui/              # Reusable UI components
+│   │   ├── AboutSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── GraphBackground.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── InstructorCard.tsx
+│   │   ├── InstructorsSection.tsx
+│   │   ├── TypewriterText.tsx
+│   │   └── WorkshopTimeline.tsx
+│   ├── constants/           # Configuration and data
+│   │   ├── instructors.ts
+│   │   └── workshop.ts
+│   ├── types/              # TypeScript type definitions
+│   ├── utils/              # Helper utilities
+│   ├── fonts/              # Vazir font files
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   ├── logo.svg
+│   ├── logo.ico
+│   └── poster.jpg
+└── ...config files
 ```
 
-## Customization
+## 🎨 Customization
 
 ### Update Workshop Content
 
-Edit the `workshops` array in `app/page.tsx` to add or modify workshop offerings.
+Edit `app/constants/workshop.ts`:
 
-### Change Colors
+```typescript
+export const WORKSHOP_CONFIG = {
+  title: 'عنوان کارگاه',
+  organizer: 'برگزارکننده',
+  // ...
+};
+```
 
-Modify the color palette in `tailwind.config.js` to match your brand.
+### Update Instructors
 
-### Update Contact Information
+Edit `app/constants/instructors.ts`:
 
-Update the contact section in `app/page.tsx` with your email and social media links.
+```typescript
+export const INSTRUCTORS: Instructor[] = [
+  {
+    id: '1',
+    name: 'نام استاد',
+    affiliation: 'وابستگی',
+    color: 'blue',
+  },
+  // ...
+];
+```
 
-## Build for Production
+### Styling
+
+- Global styles: `app/globals.css`
+- Tailwind config: `tailwind.config.js`
+- RTL support: Built-in with `tailwindcss-rtl` plugin
+
+## 🚀 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import repository on [Vercel](https://vercel.com)
+3. Deploy automatically
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=<your-repo-url>)
+
+### Build for Production
 
 ```bash
 npm run build
 npm start
 ```
 
-## Technologies Used
+## 📝 Scripts
 
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first styling with RTL plugin
-- **Lucide React** - Modern icon library
-- **Vazir Font** - Beautiful Persian/Latin font by Saber Rastikerdar
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-## License
+## 🎯 Key Features Breakdown
+
+### Animated Graph Background
+- Canvas-based particle system
+- Responsive node count (50 desktop, 25 mobile)
+- Dynamic edge connections
+- Smooth animations
+
+### Typewriter Effect
+- Configurable typing/deleting speed
+- Automatic loop with pause
+- Smooth character animation
+
+### Responsive Timeline
+- Horizontal layout on desktop
+- Vertical layout on mobile
+- Centered dots and connecting line
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-© 2024 Faculty of Mathematical Sciences, Sharif University of Technology
+## 🙏 Credits
 
+- **Vazir Font** by [Saber Rastikerdar](https://github.com/rastikerdar/vazir-font)
+- **Faculty of Mathematical Sciences, Sharif University of Technology**
+
+---
+
+© ۱۴۰۴ دانشکده علوم ریاضی دانشگاه صنعتی شریف. تمامی حقوق محفوظ است.
+
+© 2024 Faculty of Mathematical Sciences, Sharif University of Technology. All rights reserved.
