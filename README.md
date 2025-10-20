@@ -65,8 +65,8 @@ Official website for the First Discrete Mathematics and Combinatorics Workshop b
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd Workshop
+git clone https://github.com/prhdm/discrete-mathmatics-workshop.git
+cd discrete-mathmatics-workshop
 
 # Install dependencies
 npm install
@@ -160,7 +160,7 @@ export const INSTRUCTORS: Instructor[] = [
 2. Import repository on [Vercel](https://vercel.com)
 3. Deploy automatically
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=<your-repo-url>)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/prhdm/discrete-mathmatics-workshop)
 
 ### Build for Production
 
