@@ -212,6 +212,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-© ۱۴۰۴ دانشکده علوم ریاضی دانشگاه صنعتی شریف. تمامی حقوق محفوظ است.
+© ۱۴۰۴ دانشکده علوم ریاضی دانشگاه صنعتی شریف. تمامی حقوق محفوظ است.  
+طراحی شده توسط [پرهام هوشمند](https://github.com/prhdm)
 
-© 2024 Faculty of Mathematical Sciences, Sharif University of Technology. All rights reserved.
+© 2025 Faculty of Mathematical Sciences, Sharif University of Technology. All rights reserved.  
+Designed by [Parham Houshmand](https://github.com/prhdm)
