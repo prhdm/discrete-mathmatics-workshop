@@ -12,6 +12,7 @@ interface Node {
 
 const getConfig = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const isDark = typeof window !== 'undefined' && document.documentElement.classList.contains('dark');
   
   return {
     nodeCount: isMobile ? 25 : 50,
@@ -26,7 +27,9 @@ const getConfig = () => {
       'rgba(221, 160, 221, 0.6)',
       'rgba(255, 218, 185, 0.6)',
     ],
-    edgeColor: isMobile ? 'rgba(255, 255, 255, 0.1)' : 'rgba(255, 255, 255, 0.15)',
+    edgeColor: isDark 
+      ? (isMobile ? 'rgba(255, 255, 255, 0.1)' : 'rgba(255, 255, 255, 0.15)')
+      : (isMobile ? 'rgba(0, 0, 0, 0.1)' : 'rgba(0, 0, 0, 0.15)'),
   };
 };
 

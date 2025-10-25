@@ -70,14 +70,11 @@ const MobileTimeline: FC<{ events: readonly TimelineEvent[] }> = ({ events }) =>
 const TimelineContent: FC<{ event: TimelineEvent; totalEvents: number }> = ({ event, totalEvents }) => (
   <div className="flex flex-col items-center" style={{ width: `${100 / totalEvents}%` }}>
     <div className="text-center mb-3 sm:mb-4 px-1">
-      <h3 className="text-xs sm:text-sm font-bold text-black dark:text-white mb-1">
+      <h3 className="text-xs sm:text-sm font-bold text-red-500 dark:text-white mb-1">
         {event.title}
       </h3>
       <p className="text-xs font-semibold text-black dark:text-white mb-0.5 sm:mb-1">
         {event.date}
-      </p>
-      <p className="text-xs text-gray-600 dark:text-gray-400 hidden md:block">
-        {event.description}
       </p>
     </div>
   </div>

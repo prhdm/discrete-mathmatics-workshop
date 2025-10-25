@@ -38,7 +38,7 @@ export const AboutSection = () => {
               </InfoCard>
             </div>
 
-            <div className="w-full pt-6">
+            {/* <div className="w-full pt-6">
               <div className="flex flex-row gap-3 sm:gap-4">
                 <Button href={WORKSHOP_CONFIG.registrationLinks.onsite} className="flex-1">
                   ثبت‌نام حضوری
@@ -47,7 +47,7 @@ export const AboutSection = () => {
                   ثبت‌نام مجازی
                 </Button>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="order-1 lg:order-2">
@@ -63,6 +63,24 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
+        <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col items-center gap-6">
+          
+          <div className="text-center text-black dark:text-gray-400 text-sm sm:text-base space-y-2 mt-8">
+            <p className="text-xs sm:text-sm">
+              طراحی شده توسط{' '}
+              <a
+                href="https://github.com/prhdm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline"
+              >
+                پرهام هوشمند
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );
