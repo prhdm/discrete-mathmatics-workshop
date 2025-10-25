@@ -8,7 +8,6 @@ export interface Instructor {
 export interface TimelineEvent {
   title: string;
   date: string;
-  description: string;
 }
 
 export interface TypewriterProps {

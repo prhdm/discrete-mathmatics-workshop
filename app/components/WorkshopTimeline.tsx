@@ -51,9 +51,6 @@ const MobileTimeline: FC<{ events: readonly TimelineEvent[] }> = ({ events }) =>
             <p className="text-xs font-semibold text-black dark:text-white mb-0.5">
               {event.date}
             </p>
-            <p className="text-xs text-gray-600 dark:text-gray-400">
-              {event.description}
-            </p>
           </div>
           
           <div className="absolute left-1/2 transform -translate-x-1/2">
