@@ -12,7 +12,6 @@ interface Node {
 
 const getConfig = () => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-  const isDark = typeof window !== 'undefined' && document.documentElement.classList.contains('dark');
   
   return {
     nodeCount: isMobile ? 25 : 50,
@@ -27,9 +26,7 @@ const getConfig = () => {
       'rgba(221, 160, 221, 0.6)',
       'rgba(255, 218, 185, 0.6)',
     ],
-    edgeColor: isDark 
-      ? (isMobile ? 'rgba(255, 255, 255, 0.1)' : 'rgba(255, 255, 255, 0.15)')
-      : (isMobile ? 'rgba(0, 0, 0, 0.1)' : 'rgba(0, 0, 0, 0.15)'),
+    edgeColor: isMobile ? 'rgba(0, 0, 0, 0.1)' : 'rgba(0, 0, 0, 0.15)',
   };
 };
 
@@ -75,7 +72,7 @@ export const GraphBackground: FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800"
+      className="fixed top-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-slate-50 to-slate-100"
       aria-hidden="true"
     />
   );

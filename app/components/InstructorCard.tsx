@@ -12,9 +12,9 @@ export const InstructorCard: FC<InstructorCardProps> = ({ instructor }) => {
   const { name, affiliation, picture } = instructor;
   
   return (
-    <article className="bg-white dark:bg-slate-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+    <article className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-200">
       <div className="text-center">
-        <div className="w-40 h-40 rounded-full mx-auto mb-4 flex items-center justify-center bg-gray-100 dark:bg-gray-700 overflow-hidden">
+        <div className="w-40 h-40 rounded-full mx-auto mb-4 flex items-center justify-center bg-gray-100 overflow-hidden">
           <Image
             src={picture || '/instructors/placeholder.svg'}
             alt={name}
@@ -28,10 +28,10 @@ export const InstructorCard: FC<InstructorCardProps> = ({ instructor }) => {
             }}
           />
         </div>
-        <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+        <h3 className="text-xl font-bold text-black mb-2">
           {name}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600">
           {affiliation}
         </p>
       </div>

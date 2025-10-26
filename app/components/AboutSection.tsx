@@ -8,11 +8,11 @@ export const AboutSection = () => {
   return (
     <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 z-10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="order-2 lg:order-1 flex flex-col h-full">
-            <div className="flex-1 flex flex-col space-y-4 sm:space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <div className="order-2 lg:order-1 flex flex-col">
+            <div className="flex flex-col space-y-4 sm:space-y-6">
               <InfoCard title="اهم محتوای کارگاه:">
-                <ul className="space-y-2 text-base sm:text-lg text-black dark:text-white list-none">
+                <ul className="space-y-2 text-base sm:text-lg text-black list-none">
                   {WORKSHOP_CONTENT.map((item, index) => (
                     <li key={index}>• {item}</li>
                   ))}
@@ -20,7 +20,7 @@ export const AboutSection = () => {
               </InfoCard>
 
               <InfoCard>
-                <div className="space-y-3 text-base sm:text-lg text-black dark:text-white">
+                <div className="space-y-3 text-base sm:text-lg text-black">
                   <p>
                     <span className="font-bold">تاریخ برگزاری:</span> {WORKSHOP_DATES.workshop}
                   </p>
@@ -31,10 +31,26 @@ export const AboutSection = () => {
               </InfoCard>
 
               <InfoCard title="محل برگزاری:">
-                <ul className="space-y-2 text-base sm:text-lg text-black dark:text-white list-none">
+                <ul className="space-y-2 text-base sm:text-lg text-black list-none">
                   <li>• {WORKSHOP_LOCATIONS.onsite}</li>
                   <li>• {WORKSHOP_LOCATIONS.virtual}</li>
                 </ul>
+              </InfoCard>
+
+              <InfoCard>
+                <div className="text-sm sm:text-base text-black text-center">
+                  <p>
+                    برای اطلاعات بیشتر لطفا با شماره تلفن{' '}
+                    <span className="font-bold text-red-500">۶۶۱۶۵۶۱۲</span>
+                  </p>
+                  <p>
+                    یا با آدرس ایمیل{' '}
+                    <span className="font-bold text-red-500">discretemathematics@gmail.com</span>
+                  </p>
+                  <p>
+                    تماس حاصل فرمایید.
+                  </p>
+                </div>
               </InfoCard>
             </div>
 
@@ -51,7 +67,7 @@ export const AboutSection = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-8 border border-gray-200 dark:border-gray-700">
+            <div className="bg-white rounded-lg shadow-xl p-8 border border-gray-200">
               <Image
                 src="/poster.jpg"
                 alt="پوستر رسمی کارگاه آموزشی ریاضیات گسسته و ترکیبیات"
@@ -66,14 +82,14 @@ export const AboutSection = () => {
         <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-6">
           
-          <div className="text-center text-black dark:text-gray-400 text-sm sm:text-base space-y-2 mt-8">
+          <div className="text-center text-black text-sm sm:text-base space-y-2 mt-8">
             <p className="text-xs sm:text-sm">
               طراحی شده توسط{' '}
               <a
                 href="https://github.com/prhdm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline"
+                className="hover:text-blue-600 transition-colors underline"
               >
                 پرهام هوشمند
               </a>
@@ -87,12 +103,14 @@ export const AboutSection = () => {
 };
 
 const InfoCard = ({ title, children }: { title?: string; children: React.ReactNode }) => (
-  <div className="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-6 border border-gray-200 dark:border-gray-700 flex-1 flex flex-col items-center justify-center text-center">
+  <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-200 flex flex-col items-center justify-center text-center">
     {title && (
-      <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4">
+      <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
         {title}
       </h3>
     )}
-    {children}
+    <div className="flex flex-col justify-center">
+      {children}
+    </div>
   </div>
 );

@@ -8,18 +8,18 @@ const COPYRIGHT_TEXT = '۱۴۰۴ دانشکده علوم ریاضی دانشگا
 
 export const Footer: FC = () => {
   return (
-    <footer className="relative py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-800 z-10 bg-white dark:bg-slate-900">
+    <footer className="relative py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 z-10 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-6">
           
-          <div className="text-center text-black dark:text-gray-400 text-sm sm:text-base space-y-2">
+          <div className="text-center text-black text-sm sm:text-base space-y-2">
             <p className="text-xs sm:text-sm">
               طراحی شده توسط{' '}
               <a
                 href="https://github.com/prhdm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors underline"
+                className="hover:text-blue-600 transition-colors underline"
               >
                 پرهام هوشمند
               </a>

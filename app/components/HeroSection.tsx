@@ -27,13 +27,13 @@ export const HeroSection = () => {
             />
           </a>
           </div>
-          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-700 dark:text-white font-normal">
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-700 font-normal">
             {WORKSHOP_CONFIG.organizer}
           </p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-10">
             {WORKSHOP_CONFIG.title}
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-red-500 dark:text-white mb-8 max-w-3xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-red-500 mb-8 max-w-3xl mx-auto px-4">
             {WORKSHOP_CONFIG.certificate}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
@@ -44,14 +44,14 @@ export const HeroSection = () => {
               ثبت‌نام مجازی
             </Button>
           </div>
-          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-4">
+          <p className="text-sm sm:text-base text-red-500 mt-4">
             کارگاه ویژه دانش آموزان پایه هفتم تا دوازدهم می‌باشد.
           </p>
         </div>
 
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-black-500 mb-4 ">
               جدول زمانی کارگاه
             </h2>
 
