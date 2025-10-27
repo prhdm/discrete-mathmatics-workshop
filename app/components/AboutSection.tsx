@@ -9,8 +9,8 @@ export const AboutSection = () => {
     <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 z-10">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-          <div className="order-2 lg:order-1 flex flex-col">
-            <div className="flex flex-col space-y-4 sm:space-y-6">
+          <div className="order-2 lg:order-1 flex flex-col h-full">
+            <div className="flex flex-col space-y-4 sm:space-y-6 h-full">
               <InfoCard title="اهم محتوای کارگاه:">
                 <ul className="space-y-2 text-base sm:text-lg text-black list-none">
                   {WORKSHOP_CONTENT.map((item, index) => (
@@ -45,7 +45,7 @@ export const AboutSection = () => {
                   </p>
                   <p>
                     یا با آدرس ایمیل{' '}
-                    <span className="font-bold text-red-500">discretemathematics@gmail.com</span>
+                    <span className="font-bold text-red-500">discretemathematics1404@gmail.com</span>
                   </p>
                   <p>
                     تماس حاصل فرمایید.
@@ -67,7 +67,7 @@ export const AboutSection = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="bg-white rounded-lg shadow-xl p-8 border border-gray-200">
+            <div className="rounded-lg shadow-xl p-8 border border-gray-200" style={{ backgroundColor: '#F7F7F7' }}>
               <Image
                 src="/poster.jpg"
                 alt="پوستر رسمی کارگاه آموزشی ریاضیات گسسته و ترکیبیات"
@@ -103,13 +103,13 @@ export const AboutSection = () => {
 };
 
 const InfoCard = ({ title, children }: { title?: string; children: React.ReactNode }) => (
-  <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-200 flex flex-col items-center justify-center text-center">
+  <div className="rounded-lg shadow-xl p-6 border border-gray-200 flex flex-col items-center justify-center text-center flex-1" style={{ backgroundColor: '#F7F7F7' }}>
     {title && (
       <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
         {title}
       </h3>
     )}
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center flex-1">
       {children}
     </div>
   </div>

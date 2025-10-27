@@ -10,11 +10,4 @@ export interface TimelineEvent {
   date: string;
 }
 
-export interface TypewriterProps {
-  text: string;
-  typingSpeed?: number;
-  deletingSpeed?: number;
-  pauseTime?: number;
-  className?: string;
-}
 

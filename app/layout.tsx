@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fa" dir="rtl" className="light">
+    <html lang="fa" dir="rtl" className="light" style={{ colorScheme: 'light' }}>
       <body className={vazir.className}>{children}</body>
     </html>
   )

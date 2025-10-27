@@ -8,7 +8,7 @@ const COPYRIGHT_TEXT = '۱۴۰۴ دانشکده علوم ریاضی دانشگا
 
 export const Footer: FC = () => {
   return (
-    <footer className="relative py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 z-10 bg-white">
+    <footer className="relative py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 z-10" style={{ backgroundColor: '#F7F7F7' }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-6">
           

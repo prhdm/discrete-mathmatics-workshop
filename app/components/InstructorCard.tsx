@@ -12,7 +12,7 @@ export const InstructorCard: FC<InstructorCardProps> = ({ instructor }) => {
   const { name, affiliation, picture } = instructor;
   
   return (
-    <article className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-200">
+    <article className="rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-200" style={{ backgroundColor: '#F7F7F7' }}>
       <div className="text-center">
         <div className="w-40 h-40 rounded-full mx-auto mb-4 flex items-center justify-center bg-gray-100 overflow-hidden">
           <Image
