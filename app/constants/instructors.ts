@@ -28,7 +28,7 @@ export const INSTRUCTORS: Instructor[] = [
   {
     id: '5',
     name: 'دکتر علی طاهرخانی',
-    affiliation: 'دانشگاه علوم پایه و تحصيلات تكميلى زنجان',
+    affiliation: 'دانشكاه تحصيلات تكميلى علوم پايه زنجان',
     picture: '/instructors/ali-taherkhani.png',
   },
   {

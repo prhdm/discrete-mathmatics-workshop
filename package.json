@@ -6,8 +6,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "pnpm run build",
+    "audit": "node scripts/performance-audit.js",
+    "optimize": "node scripts/optimize-images-advanced.js"
   },
   "dependencies": {
     "lucide-react": "^0.424.0",

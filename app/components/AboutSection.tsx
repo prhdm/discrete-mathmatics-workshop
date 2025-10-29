@@ -11,13 +11,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="order-2 lg:order-1 flex flex-col h-full">
             <div className="flex flex-col space-y-4 sm:space-y-6 h-full">
-              <InfoCard title="اهم محتوای کارگاه:">
-                <ul className="space-y-2 text-base sm:text-lg text-black list-none">
-                  {WORKSHOP_CONTENT.map((item, index) => (
-                    <li key={index}>• {item}</li>
-                  ))}
-                </ul>
-              </InfoCard>
+              
 
               <InfoCard>
                 <div className="space-y-3 text-base sm:text-lg text-black">
@@ -80,23 +74,53 @@ export const AboutSection = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center gap-6">
+          {/* Workshop Objectives Card */}
+          <div className="mt-12">
+            <InfoCard title="اهداف کارگاه آموزشی ریاضیات گسسته و ترکیبیات">
+              <div className="text-sm sm:text-base text-black text-right leading-relaxed space-y-4">
+                <p>
+                  کارگاه ریاضیات گسسته و ترکیبیات با هدف معرفی، آموزش و تعمیق مفاهیم بنیادی و قضایای کلاسیک این شاخه از ریاضیات برگزار می‌شود. در این کارگاه، دانش‌آموزان در سطح‌های مقدماتی تا پیشرفته با ایده‌ها و روش‌های گوناگون در زمینه ریاضیات گسسته و ترکیبیات، که یکی از ارکان اصلی موضوعات پرکاربردی همچون هوش مصنوعی و علوم داده است، آشنا خواهند شد.
+                </p>
+                
+                <p>
+                  در بخش‌های آغازین، به مباحث پایه‌ای شمارش از جمله اصل لانه‌کبوتری، اصل شمول و عدم شمول و سایر اصول مقدماتی مرتبط پرداخته می‌شود. سپس شرکت‌کنندگان با روش‌های پیشرفته‌تر شمارشی، مانند استفاده از توابع مولد و تکنیک‌های ترکیبیاتی نوین، آشنا می‌شوند و می‌آموزند چگونه این ابزارها را در حل مسائل گوناگون به کار گیرند.
+                </p>
+                
+                <p>
+                  یکی از بخش‌های مهم و جالب این کارگاه، آشنایی با نظریه گراف است. در این بخش، اصول، تعاریف و برخی از قضایای کلاسیک نظریه گراف ارائه می‌شود و نیز کاربردهای گرافها در حل مسائل مسابقات مورد بررسی قرار می‌گیرد. همچنین، شیوه‌های تحلیل و مدل‌سازی مسائل با استفاده از گراف‌ها و نحوه به‌کارگیری نتایج این نظریه جذاب آموزش داده خواهد شد.
+                </p>
+                
+                <p>
+                  در ادامه کارگاه، نمونه‌هایی از مسائل ترکیبیاتی و گرافی به صورت گام به گام تحلیل می‌شوند تا شرکت‌کنندگان ضمن درک بهتر مفاهیم نظری، توانایی خود را در حل مسائل خلاقانه افزایش دهند. در پایان، برخی از اساتید کارگاه تعدادی مسائل تحقیقاتی در زمینه ریاضیات گسسته را معرفی خواهند کرد تا دانش‌آموزان علاقه‌مند بتوانند مسیر آشنایی خود را با فعالیت‌های پژوهشی و مطالعات عمیق‌تر در این حوزه آغاز کنند.
+                </p>
+                
+                <p>
+                  اساتید این کارگاه که از محققین دانشگاه و مدرسین حوزه ترکیبیات در کشور هستند، این رویداد را با همکاری دانشکده علوم ریاضی دانشگاه صنعتی شریف برگزار می‌کنند.
+                </p>
+                
+                <p>
+                  این کارگاه فرصتی ارزشمند برای تقویت تفکر ترکیبیاتی، افزایش قدرت استدلال منطقی، و ارتقای مهارت‌های حل مسئله در ریاضیات گسسته برای دانش‌آموزان است و می‌تواند آنان را برای تسلط بیشتر بر این موضوع یا حضور در رقابت‌های علمی آماده تر سازد.
+                </p>
+              </div>
+            </InfoCard>
+          </div>
           
-          <div className="text-center text-black text-sm sm:text-base space-y-2 mt-8">
-            <p className="text-xs sm:text-sm">
-              طراحی شده توسط{' '}
-              <a
-                href="https://github.com/prhdm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors underline"
-              >
-                پرهام هوشمند
-              </a>
-            </p>
+          <div className="flex flex-col items-center gap-6">
+            <div className="text-center text-black text-sm sm:text-base space-y-2 mt-8">
+              <p className="text-xs sm:text-sm">
+                طراحی شده توسط{' '}
+                <a
+                  href="https://github.com/prhdm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600 transition-colors underline"
+                >
+                  پرهام هوشمند
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   );

@@ -1,0 +1,36 @@
+{
+  "name": "کارگاه آموزشی ریاضیات گسسته و ترکیبیات",
+  "short_name": "کارگاه ریاضیات گسسته",
+  "description": "اولین کارگاه آموزشی ریاضیات گسسته و ترکیبیات دانشگاه صنعتی شریف",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F7F7",
+  "theme_color": "#F7F7F7",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/logo.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["education", "mathematics", "science"],
+  "screenshots": [
+    {
+      "src": "/poster.jpg",
+      "sizes": "600x800",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+}
