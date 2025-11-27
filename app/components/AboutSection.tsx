@@ -35,11 +35,21 @@ export const AboutSection = () => {
                 <div className="text-sm sm:text-base text-black text-center">
                   <p>
                     برای اطلاعات بیشتر لطفا با شماره تلفن{' '}
-                    <span className="font-bold text-red-500">۶۶۱۶۵۶۱۲</span>
+                    <a 
+                      href="tel:02166165612" 
+                      className="font-bold text-red-500 hover:text-red-700 transition-colors"
+                    >
+                      ۶۶۱۶۵۶۱۲
+                    </a>
                   </p>
                   <p>
                     یا با آدرس ایمیل{' '}
-                    <span className="font-bold text-red-500">discretemathematics1404@gmail.com</span>
+                    <a 
+                      href="mailto:discretemathematics1404@gmail.com" 
+                      className="font-bold text-red-500 hover:text-red-700 transition-colors"
+                    >
+                      discretemathematics1404@gmail.com
+                    </a>
                   </p>
                   <p>
                     تماس حاصل فرمایید.

@@ -5,6 +5,7 @@ export const WORKSHOP_CONFIG = {
   registrationLinks: {
     onsite: 'https://pay.sharif.edu/form2/3/160498/50000000',
     virtual: 'https://pay.sharif.edu/form2/3/160498/40000000',
+    sharifFamily: 'https://pay.sharif.edu/form2/3/160498/37500000',
   },
 } as const;
 
