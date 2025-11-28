@@ -43,14 +43,19 @@ export const HeroSection = () => {
             <Button href={WORKSHOP_CONFIG.registrationLinks.virtual}>
               ثبت‌نام مجازی
             </Button>
-            <Button href={WORKSHOP_CONFIG.registrationLinks.sharifFamily}>
-              ثبت‌نام حضوری برای خانواده محترم شریف
-            </Button>
           </div>
           <p className="text-sm sm:text-base text-red-500 mt-4">
             کارگاه ویژه دانش آموزان پایه هفتم تا دوازدهم می‌باشد.
           </p>
-          <p className="text-sm sm:text-base text-red-500 mt-2">
+        </div>
+
+        <div className="mt-20 text-center">
+          <div className="flex justify-center px-4 mb-4">
+            <Button href={WORKSHOP_CONFIG.registrationLinks.sharifFamily}>
+              ثبت‌نام حضوری برای خانواده محترم شریف
+            </Button>
+          </div>
+          <p className="text-sm sm:text-base text-red-500">
             ۲۵ درصد تخفیف ویژه فرزندان اساتید و کارمندان محترم دانشگاه صنعتی شریف (لطفا کپی حکم و صفحه اول شناسنامه فرزند به{' '}
             <a 
               href="mailto:discretemathematics1404@gmail.com" 
@@ -58,7 +63,7 @@ export const HeroSection = () => {
             >
               ایمیل
             </a>
-            {' '}ارسال شود. ایمیل در انتهای سایت قابل مشاهده است.
+            {' '}موجود در سایت ارسال شود).
           </p>
         </div>
 
