@@ -59,7 +59,7 @@ export const HeroSection = () => {
             ۲۵ درصد تخفیف ویژه فرزندان اساتید و کارمندان محترم دانشگاه صنعتی شریف (لطفا کپی حکم و صفحه اول شناسنامه فرزند به{' '}
             <a 
               href="mailto:discretemathematics1404@gmail.com" 
-              className="underline hover:text-red-700 transition-colors"
+              className="text-blue-500 hover:text-blue-700 transition-colors"
             >
               ایمیل
             </a>
